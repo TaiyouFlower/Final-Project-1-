@@ -1,0 +1,256 @@
+/* * CSS RESET* */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* * MAIN CSS * */
+body {
+  background-color: #f2f2f2;
+}
+h1,h2,h3,h4,h5,p,a,li {
+  font-family: "Protest Revolution", sans-serif;
+  color:white;
+}
+h1,h2,h3,p {
+  cursor: default;
+}
+body {
+  background:#f2f2f2;
+  background-position: center;
+  background-size:cover;
+  background-repeat:  no-repeat;
+  position: relative;
+}
+.head-section {
+  height:800px;
+  width:100%;
+  background-position: center;
+  background-size:auto;
+  background-repeat:  no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+.wrapper {
+  max-width: 1560px;
+  margin:0px auto;
+}
+.wrapper.head {
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap:218px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1 {
+  color:white;
+  font-size:70px;
+  font-weight: 900;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+li {
+  list-style: none;
+  color:white;
+  font-size: 40px;
+  margin: 0px 16px;
+}
+a {
+  text-decoration: none;
+  font-weight: 700;
+}
+a:hover {
+  color: rgb(98, 166, 173);
+  transform: scale(1.3);
+}
+a:visited:hover {
+  color: rgb(98, 166, 173);
+  scale:(1.3);
+}
+a:visited {
+  color:white;
+  text-decoration: none !important;
+}
+.head-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:12px;
+  opacity: 0;
+  animation: fadeInAnimation 7s ease-in-out forwards
+}
+h2 {
+  font-size: 48px;
+  color:white;
+  font-weight:900;
+}
+h3 {
+  font-size: 24px;
+}
+
+.wrapper.main {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  gap:36px;
+}
+.tour {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:30px;
+}
+.tour-location {
+  border-right: 2px solid black;
+  padding-right:10px;
+}
+.tour-rating {
+  border-right: 2px solid black;
+  padding-right:10px;
+}
+.tour-review {
+  display: flex;
+  align-items: center;
+  gap:12px;
+}
+h4 {
+  color: rgba(255, 255, 255, 0.849);
+  font-size: 36px;
+}
+.tour-booking {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:14px;
+  margin-top: 20px;
+}
+.tour-booking h3 {
+  color:white;
+}
+.date-and-guest-picker {
+  display: flex;
+  flex-direction: column;
+  gap:4px;
+  width: 500px;
+}
+.guest-picker {
+  display: flex;
+  width: 500px;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+.guest-picker h3 {
+  color: black;
+}
+.tour-confirmation {
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  margin-top:16px;
+}
+.tour-confirmation button {
+  font-size:24px;
+}
+
+#confirm-booking {
+  background-color:#7BBCB0;
+  color: white;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.total-price {
+  align-self: center;
+  color:#7BBCB0;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#confirm-booking {
+  background-color: #7BBCB0;
+  color: white;
+}
+#confirm-booking:hover {
+  background-color: #5c8e85; ;
+}
+
+#add-to-wishlist,
+#share-this-activity {
+  background-color: white;
+  color:black;
+  border: 1px solid #ccc;
+}
+
+#add-to-wishlist:hover,
+#share-this-activity:hover {
+  background-color:rgb(206, 205, 205);
+}

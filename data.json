@@ -1,0 +1,368 @@
+[
+  {
+     "name": "London",
+     "country": "UK",
+     "avg_visitors": 10000,
+     "cover": "./images/london-bridge-over-thames.jpg",
+     "description": "Vibrant metropolis known for its history, culture, and iconic landmarks.",
+     "attractions": [
+        {
+           "attraction_name": "Big Ben",
+           "attraction_cover":"./images/luke-stackpoole-mOEqOtmuPG8-unsplash.jpg",
+           "duration": "5h",
+           "price": "30$",
+           "rating": 4.9,
+           "description": "Iconic clock tower in the heart of London, offering stunning views of the city."
+        },
+        {
+           "attraction_name": "The London Eye",
+           "duration": "1h",
+           "description": "Famous giant Ferris wheel offering panoramic views of London's skyline."
+        },
+        {
+           "attraction_name": "Buckingham Palace",
+           "duration": "2h",
+           "description": "Official residence of the British monarch, known for its grandeur and history."
+        },
+        {
+           "attraction_name": "Tower of London",
+           "duration": "3h",
+           "description": "Historic castle and former royal palace, home to the Crown Jewels."
+        },
+        {
+           "attraction_name": "British Museum",
+           "duration": "4h",
+           "description": "World-renowned museum showcasing art and artifacts from ancient civilizations."
+        }
+     ]
+  },
+  {
+     "name": "Paris",
+     "country": "France",
+     "avg_visitors": 8000,
+     "cover": "./images/paris-buildings.jpg",
+     "description": "City of love renowned for its art, fashion, gastronomy, and iconic landmarks.",
+     "attractions": [
+        {
+           "attraction_name": "Eiffel Tower",
+           "duration": "2h",
+           "description": "Iconic wrought-iron lattice tower offering breathtaking views of Paris."
+        },
+        {
+           "attraction_name": "Louvre Museum",
+           "duration": "4h",
+           "description": "World's largest art museum and historic monument housing thousands of artworks."
+        },
+        {
+           "attraction_name": "Notre-Dame Cathedral",
+           "duration": "3h",
+           "description": "Gothic masterpiece known for its architecture, stained glass, and religious significance."
+        },
+        {
+           "attraction_name": "Montmartre",
+           "duration": "4h",
+           "description": "Charming hilltop district famous for its bohemian atmosphere and stunning views."
+        },
+        {
+           "attraction_name": "Seine River Cruise",
+           "duration": "2h",
+           "description": "Relaxing boat tour offering picturesque views of Paris landmarks along the Seine River."
+        }
+     ]
+  },
+  {
+     "name": "New York City",
+     "country": "USA",
+     "avg_visitors": 12000,
+     "cover": "./images/new-york-busy-street.jpg",
+     "description": "Cosmopolitan city renowned for its skyscrapers, culture, and diverse attractions.",
+     "attractions": [
+        {
+           "attraction_name": "Statue of Liberty",
+           "attraction_cover": "./images/richard-iwaki-ZsqtZUAe3u4-unsplash.jpg",
+           "duration": "3h",
+           "price": "40$",
+           "rating": 4.6,
+           "description": "Iconic symbol of freedom and democracy, offering guided tours of its pedestal and museum."
+        },
+        {
+           "attraction_name": "Central Park",
+           "duration": "4h",
+           "description": "Sprawling urban park featuring walking trails, lakes, and recreational activities."
+        },
+        {
+           "attraction_name": "Empire State Building",
+           "duration": "2h",
+           "description": "Iconic skyscraper offering panoramic views of the city from its observation decks."
+        },
+        {
+           "attraction_name": "Times Square",
+           "duration": "2h",
+           "description": "Vibrant entertainment district known for its bright lights, theaters, and bustling atmosphere."
+        },
+        {
+           "attraction_name": "Metropolitan Museum of Art",
+           "duration": "4h",
+           "description": "World-renowned art museum housing a vast collection spanning thousands of years and cultures."
+        }
+     ]
+  },
+  {
+     "name": "Tokyo",
+     "country": "Japan",
+     "avg_visitors": 9000,
+     "cover": "./images/tokyo-at-night.jpg",
+     "description": "Modern metropolis known for its cutting-edge technology, pop culture, and historic sites.",
+     "attractions": [
+        {
+           "attraction_name": "Tokyo Skytree",
+           "attraction_cover": "./images/charles-postiaux-8JwcywhPUcM-unsplash.jpg",
+           "duration": "2h",
+           "price": "20$",
+           "rating": 4.1,
+           "description": "Tallest structure in Japan offering panoramic views of Tokyo from its observation decks."
+        },
+        {
+           "attraction_name": "Senso-ji Temple",
+           "duration": "3h",
+           "description": "Oldest Buddhist temple in Tokyo, known for its historic architecture and bustling Nakamise-dori shopping street."
+        },
+        {
+           "attraction_name": "Shibuya Crossing",
+           "duration": "1h",
+           "description": "Famous intersection in Shibuya known for its bustling pedestrian traffic and neon lights."
+        },
+        {
+           "attraction_name": "Meiji Shrine",
+           "duration": "2h",
+           "description": "Shinto shrine surrounded by a serene forest, offering a peaceful retreat from the city."
+        },
+        {
+           "attraction_name": "Tokyo Disneyland",
+           "duration": "1d",
+           "description": "Popular theme park featuring various themed lands, attractions, and entertainment."
+        }
+     ]
+  },
+  {
+     "name": "Sydney",
+     "country": "Australia",
+     "avg_visitors": 7000,
+     "description": "Harbor city known for its stunning beaches, iconic landmarks, and vibrant culture.",
+     "attractions": [
+        {
+           "attraction_name": "Sydney Opera House",
+           "duration": "3h",
+           "description": "Iconic performing arts center known for its distinctive sail-like design and world-class performances."
+        },
+        {
+           "attraction_name": "Sydney Harbour Bridge",
+           "duration": "2h",
+           "description": "Steel arch bridge offering panoramic views of the city and thrilling bridge climbs."
+        },
+        {
+           "attraction_name": "Bondi Beach",
+           "duration": "4h",
+           "description": "Famous beach known for its golden sands, turquoise waters, and vibrant surf culture."
+        },
+        {
+           "attraction_name": "Taronga Zoo",
+           "duration": "5h",
+           "description": "Zoo with a diverse collection of animals, stunning views of Sydney Harbor, and interactive experiences."
+        },
+        {
+           "attraction_name": "Royal Botanic Garden",
+           "duration": "3h",
+           "description": "Tranquil botanical garden showcasing a wide variety of native and exotic plants."
+        }
+     ]
+  },
+  {
+     "name": "Rome",
+     "country": "Italy",
+     "avg_visitors": 8500,
+     "cover": "./images/trevi-fountain-in-rome.jpg",
+     "description": "Eternal city renowned for its ancient ruins, Renaissance art, and vibrant street life.",
+     "attractions": [
+        {
+           "attraction_name": "Colosseum",
+           "attraction_cover": "./images/andrii-zhuk-rDB0GUsvjKc-unsplash.jpg",
+           "duration": "3h",
+           "price": "65$",
+           "rating": 4.7,
+           "description": "Iconic amphitheater known for its ancient gladiatorial combats and historic significance."
+        },
+        {
+           "attraction_name": "Vatican City",
+           "duration": "4h",
+           "description": "Spiritual and cultural center of Catholicism, home to St. Peter's Basilica and the Vatican Museums."
+        },
+        {
+           "attraction_name": "Trevi Fountain",
+           "duration": "1h",
+           "description": "Baroque fountain known for its stunning design and tradition of tossing coins for good luck."
+        },
+        {
+           "attraction_name": "Pantheon",
+           "duration": "2h",
+           "description": "Well-preserved ancient temple dedicated to the Roman gods, featuring a remarkable domed roof."
+        },
+        {
+           "attraction_name": "Roman Forum",
+           "duration": "3h",
+           "description": "Ruins of ancient Roman government buildings, temples, and public spaces, offering a glimpse into Roman life."
+        }
+     ]
+  },
+  {
+     "name": "Alaska",
+     "country": "USA",
+     "avg_visitors": 30000,
+     "cover": "./images/main-img.jpg",
+     "description": "Land of stunning natural beauty, wilderness, and adventure.",
+     "attractions": [
+        {
+           "attraction_name": "Denali National Park",
+           "attraction_cover": "./images/grand-canyon-national-park-at-sunset.jpg",
+           "duration": "2 hours",
+           "rating": 4.3,
+           "beginner": true,
+           "family": true,
+           "price": "40$",
+           "description": "Vast wilderness area with diverse wildlife, scenic mountains, and North America's tallest peak, Denali."
+        },
+        {
+           "attraction_name": "Kenai Fjords National Park",
+           "attraction_cover": "/images/in-the-park.jpg",
+           "duration": "3 hours",
+           "rating": 4.6,
+           "beginner": true,
+           "family": true,
+           "price": "50$",
+           "description": "Coastal park known for its glaciers, fjords, marine wildlife, and rugged Alaskan wilderness."
+        },
+        {
+           "attraction_name": "Glacier Bay National Park",
+           "attraction_cover": "/images/northern-lights-through-sky.jpg",
+           "duration": "1 hour",
+           "rating": 4.5,
+           "beginner": true,
+           "family": true,
+           "price": "25$",
+           "description": "UNESCO World Heritage Site featuring stunning glaciers, fjords, and diverse ecosystems."
+        },
+        {
+           "attraction_name": "Anchorage Museum",
+           "attraction_cover": "/images/european-statues.jpg",
+           "duration": "5 hours",
+           "rating": 4.4,
+           "price": "70$",
+           "beginner": true,
+           "family": true,
+           "description": "Museum showcasing Alaska's art, history, and culture, with exhibits on native heritage and local wildlife."
+        }
+     ]
+  },
+  {
+     "name": "Barcelona",
+     "country": "Spain",
+     "cover": "/images/barcelona-city.jpg",
+     "avg_visitors": 7500,
+     "description": "Cosmopolitan city known for its distinctive architecture, vibrant culture, and Mediterranean beaches.",
+     "attractions": [
+        {
+           "attraction_name": "Sagrada Familia",
+           "duration": "3h",
+           "description": "Architectural masterpiece designed by Antoni Gaudí, still under construction after more than a century."
+        },
+        {
+           "attraction_name": "Park Güell",
+           "duration": "4h",
+           "description": "Public park featuring colorful mosaic sculptures, whimsical architecture, and panoramic views of the city."
+        },
+        {
+           "attraction_name": "Gothic Quarter",
+           "duration": "2h",
+           "description": "Medieval neighborhood known for its narrow streets, historic buildings, and lively atmosphere."
+        },
+        {
+           "attraction_name": "Barceloneta Beach",
+           "duration": "3h",
+           "description": "Popular urban beach lined with seafood restaurants, bars, and a lively promenade."
+        },
+        {
+           "attraction_name": "Casa Batlló",
+           "duration": "2h",
+           "description": "Fantastical building designed by Antoni Gaudí, featuring colorful façade and unique architectural details."
+        }
+     ]
+  },
+  {
+     "name": "Dubai",
+     "country": "UAE",
+     "avg_visitors": 5500,
+     "cover": "/images/local-community-outdoors.jpg",
+     "description": "Modern city known for its futuristic architecture, luxury shopping, and vibrant nightlife.",
+     "attractions": [
+        {
+           "attraction_name": "Burj Khalifa",
+           "duration": "3h",
+           "description": "Tallest building in the world, offering breathtaking views of the city from its observation decks."
+        },
+        {
+           "attraction_name": "Dubai Mall",
+           "duration": "5h",
+           "description": "Largest mall in the world, featuring thousands of shops, entertainment attractions, and dining options."
+        },
+        {
+           "attraction_name": "Palm Jumeirah",
+           "duration": "4h",
+           "description": "Man-made island featuring luxury hotels, beach resorts, and upscale residential developments."
+        },
+        {
+           "attraction_name": "Dubai Creek",
+           "duration": "2h",
+           "description": "Historic waterway dividing the city, offering traditional boat cruises and views of Dubai's skyline."
+        },
+        {
+           "attraction_name": "Wild Wadi Water Park",
+           "duration": "1d",
+           "description": "Water park featuring thrilling rides, water slides, and attractions for all ages."
+        }
+     ]
+  },
+  {
+     "name": "Rio de Janeiro",
+     "country": "Brazil",
+     "avg_visitors": 8000,
+     "cover": "/images/sunsets-on-a-beach-with-people-swimming.jpg",
+     "description": "City of samba and Carnival known for its stunning beaches, lively culture, and iconic landmarks.",
+     "attractions": [
+        {
+           "attraction_name": "Christ the Redeemer",
+           "duration": "3h",
+           "description": "Iconic Art Deco statue atop Corcovado Mountain, offering panoramic views of the city."
+        },
+        {
+           "attraction_name": "Copacabana Beach",
+           "duration": "4h",
+           "description": "World-famous beach known for its golden sands, vibrant atmosphere, and lively street vendors."
+        },
+        {
+           "attraction_name": "Sugarloaf Mountain",
+           "duration": "3h",
+           "description": "Granite peak offering breathtaking views of Rio and access via cable car or hiking trails."
+        },
+        {
+           "attraction_name": "Tijuca National Park",
+           "duration": "5h",
+           "description": "Urban rainforest featuring hiking trails, waterfalls, and diverse flora and fauna."
+        },
+        {
+           "attraction_name": "Maracanã Stadium",
+           "duration": "2h",
+           "description": "Legendary football stadium known for hosting World Cup matches and iconic sporting events."
+        }
+     ]
+  }
+]

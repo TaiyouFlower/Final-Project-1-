@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+/* * CSS RESET* */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* * Main CSS * */
+
+body {
+  background-color: #f2f2f2;
+  background-image: url(./images/head-img3.jpg);
+  background-position: center;
+  background-size:cover;
+  background-repeat:  no-repeat;
+
+}
+h1,h2,h3,h4,h5,p,a,li {
+  font-family: "Protest Revolution", sans-serif;
+  color:white;
+}
+* {
+  box-sizing: border-box;
+}
+h1,h2,h3,p {
+  cursor: default;
+}
+.wrapper {
+  display: flex;
+  max-width: 100%;
+  width: 1560px;
+  margin:12px auto 24px auto;
+}
+#tours-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap:80px;
+  flex-wrap: wrap;
+  flex:1 1 25%;
+}
+.card {
+  height:400px;
+  width:300px;
+  margin: 7px 0px;
+}
+.price {
+  padding-right: 20px;
+}
+.card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:12px;
+  padding: 14px 0px 8px 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  width: 300px;
+  height: 200px;
+}
+.card h4 {
+  color:black;
+  font-size: 28px;
+}
+.card h5 {
+  color:black;
+  font-size:16px;
+}
+.overview {
+  display: flex;
+  
+  border-top: solid 2px rgb(236, 236, 236);
+  font-size: 28px;
+  padding-top: 4px;
+}
+.duration::before {
+  content: '\f017'; 
+  font-family: 'Font Awesome 5 Free'; 
+  font-size:16px;
+  margin-right:6px;
+}
+.transport::before {
+  content: '\f046';
+  font-family: 'Font Awesome 5 Free'; 
+  font-size:16px;
+  margin-right:6px;
+}
+.plan::before {
+  content: '\f007'; 
+  font-family: 'Font Awesome 5 Free';
+  font-size:16px;
+  margin-right:6px;
+}
+.rating {
+  color:black;
+}
+.price {
+  color:#7BBCB0;
+}
+.mini-img-container {
+  background-image: url(./images/mini-img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 300px;
+  height: 200px;
+}
+.mini-img-container img {
+  background-image: url(./images/mini-img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  overflow: hidden;
+  width:300px;
+}
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="tour.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?f
+    amily=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&display=swap"
+    rel="stylesheet">
+  <title>Booking</title>
+</head>
+
+<body>
+  <section class="head-section">
+    <div class="wrapper head">
+      <nav>
+        <h1 class="title">Tour Guide</h1>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Tours</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Sign In</a></li>
+        </ul>
+      </nav>
+      <div class="tour">
+        <h1 class="tour-title"></h1>
+        <div class="tour-review">
+          <h4 class="tour-location"></h4>
+          <h4 class="tour-rating"></h4>
+          <h4 class="tour-duration"></h4>
+        </div>
+        <h2 class="total-price"></h2>
+        <div class="tour-booking">
+          <div class="date-and-guest-picker">
+            <label for="Name"></label>
+            <input type="text" id="from-date" placeholder="Name">
+            <label for="privateNumber"></label>
+            <input type="text" id="to-date" placeholder="Private Number">
+            <label class="num-of-guests" for="guests"></label>
+            <select id="guests">
+              <option value="1">1 Guest</option>
+              <option value="2">2 Guests</option>
+              <option value="3">3 Guests</option>
+              <option value="4">4 Guests</option>
+              <option value="5">5 Guests</option>
+              <option value="6">6 Guests</option>
+            </select>
+          </div>
+          <div class="tour-confirmation">
+            <button id="confirm-booking">Confirm Booking</button>
+            <button id="add-to-wishlist">Add To Wishlist</button>
+            <button id="share-this-activity">Share This Activity</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="script.js" type="module"></script>
+  <script src="tour.js" type="module"></script>
+  <script src="data.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+</body>
+
+</html>
