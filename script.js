@@ -18,7 +18,6 @@ for (let i = 0; i < 4; i++) {
         </div>`;
   popularAttractions.appendChild(card);
 }
-
 fetch(url)
   .then((response) => {
     if (!response.ok) {
@@ -57,6 +56,9 @@ fetch(url)
       }
     });
     function updateCityContent(cityName) {
+      // Clear existing cards
+      popularAttractions.innerHTML = "";
+
       let index = 1;
       const cityData = findDataWithName(cityName);
       if (cityData) {
@@ -65,31 +67,51 @@ fetch(url)
         cityDesc.querySelector("p").textContent = cityData.description;
         const mainImgContainer = document.querySelector(".main-img-container");
         mainImgContainer.style.backgroundImage = `url(${cityData.cover})`;
+
         const topCityAttractions = cityData.attractions.slice(0, 4);
         topCityAttractions.map((popularAttraction) => {
-          currentCard(index).querySelector(".card-title").textContent =
+          // Create new card elements
+          const card = document.createElement("li");
+          card.classList.add("card");
+          card.classList.add(`card-${index}`);
+          card.innerHTML = `
+            <div class="mini-img-container"></div>
+            <div class="card-info">
+              <h4 class="card-title"></h4>
+              <h5 class="duration"></h5>
+              <h5 class="transport"></h5>
+              <h5 class="plan"></h5>
+              <div class="overview">
+                <div class="rating"></div>
+                <div class="price"></div>
+              </div>
+            </div>`;
+
+          // Set card content
+          card.querySelector(".card-title").textContent =
             popularAttraction.name;
-          currentCard(index).querySelector(".duration").textContent =
+          card.querySelector(".duration").textContent =
             popularAttraction.duration;
-          currentCard(index).querySelector(".transport").textContent =
-            isBeginner(popularAttraction.beginner);
-          currentCard(index).querySelector(".plan").textContent = isFamily(
+          card.querySelector(".transport").textContent = isBeginner(
+            popularAttraction.beginner
+          );
+          card.querySelector(".plan").textContent = isFamily(
             popularAttraction.family
           );
-          currentCard(index).querySelector(".rating").textContent =
-            popularAttraction.rating;
-          currentCard(index).querySelector(".price").textContent =
-            popularAttraction.price;
-          currentCard(index).querySelector(
+          card.querySelector(".rating").textContent = popularAttraction.rating;
+          card.querySelector(".price").textContent = popularAttraction.price;
+          card.querySelector(
             ".mini-img-container"
-          ).style.backgroundImage = `url(${popularAttraction.attraction_cover}`;
-          currentCard(index).addEventListener("click", () => {
-            const attraction = findAttractionWithName(
-              popularAttraction.attraction_name
-            );
+          ).style.backgroundImage = `url(${popularAttraction.attraction_cover})`;
 
-            redirectToTourPage(attraction);
+          // Add event listener
+          card.addEventListener("click", () => {
+            redirectToTourPage(popularAttraction);
           });
+
+          // Append the card to the list
+          popularAttractions.appendChild(card);
+
           index++;
         });
       }
@@ -153,6 +175,7 @@ fetch(url)
     </div>
     `;
         attractionCard.addEventListener("click", () => {
+          console.log(attraction);
           redirectToTourPage(attraction);
         });
 
