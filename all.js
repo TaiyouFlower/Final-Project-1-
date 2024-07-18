@@ -9,6 +9,7 @@ fetch(url)
     return response.json();
   })
   .then((data) => {
+    console.log("lol");
     console.log(data);
     const sortedData = data.sort((a, b) => b.avg_visitors - a.avg_visitors);
     const topCities = sortedData.slice(0, 8);
@@ -34,6 +35,7 @@ fetch(url)
       </div>
       `;
             attractionCard.addEventListener("click", () => {
+              console.log("clicked lolzies");
               redirectToTourPage(attraction);
             });
 
@@ -43,6 +45,8 @@ fetch(url)
       });
     }
     function redirectToTourPage(attraction) {
+      console.log(attraction.attraction_name);
+      console.log("lolzies");
       const city = findCityWithAttraction(attraction);
       const params = new URLSearchParams();
       params.append("name", attraction.attraction_name);
@@ -79,9 +83,6 @@ fetch(url)
 document.addEventListener("DOMContentLoaded", function () {
   if (!localStorage.getItem("alertShown")) {
     setTimeout(function () {
-      alert(
-        "WARNING:HORRIBLE DESIGN :D my creative skills as a designer have ran out :)"
-      );
       localStorage.setItem("alertShown", "true");
     }, 4000);
   }
